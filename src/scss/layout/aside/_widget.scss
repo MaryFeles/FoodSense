@@ -1,0 +1,40 @@
+.widget-list {
+    @include _992 {
+        display: none;
+    }
+}
+
+.widget {
+    @include flex (column, nowrap, normal, space-between, 0);
+
+    &__header {
+        @include font (12px, 12px);
+        font-family: Verdana, sans-serif;
+        text-transform: uppercase;
+        
+        padding: 5px 0 5px 0;
+        margin-bottom: 10px;
+    }
+
+    &__btn {
+        @include flex (row, nowrap, center, flex-start, 0);;
+    
+        padding: 6px 7px;
+        background-color: $white;
+        
+        border-radius: 5px;
+
+        &:active {
+            background-color: $light-active;
+        }
+
+        &::before {
+            margin-right: 6px;
+        }
+    }
+
+    &__body {
+        @include font (10px, 19px);    
+        padding: 5px 0 15px 0;
+    }
+}

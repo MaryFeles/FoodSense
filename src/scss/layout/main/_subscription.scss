@@ -1,0 +1,87 @@
+.subscription {
+    @include flex;
+    width: 100%;
+        
+    margin: 30px 0;
+    padding: 10px 20px;
+
+    @include _1176 {
+        margin: 20px 0;
+    }
+
+    @include _768 {
+        flex-wrap: wrap;
+    }
+
+    @include _480 {
+        margin: 30px 0;
+    }
+
+    &__text-wrapper {
+        @include flex (row, nowrap, center, normal, 2);
+        width: 66%;
+
+        @include _992 {
+            align-items: flex-start;
+        }
+
+        &::before {
+            height: 26px;
+        }
+    }
+
+    &__form {
+        @include flex (row, nowrap, center, space-between, 1);
+        
+        @include _768 {
+            flex-grow: 1;
+            width: 100%;
+
+            padding: 16px 0 6px;            
+        }
+
+        @include _480 {
+            justify-content: flex-start;
+        }
+    }
+
+    &__input {
+        @include font(10px, 14px);
+    
+        width: 160px;
+        height: 22px;
+
+        padding: 0 6px;
+        margin-right: 18px;
+
+        background: $white;
+
+        @include _768 {
+            flex-grow: 1;
+        }
+
+        @include _480 {
+            max-width: 210px;
+        }
+    }
+
+    &__text {
+        padding-left: 16px;
+    }
+
+    &__btn {
+        min-height: 22px;
+
+        background: $gradient-primary;
+        
+        border-radius: 2px;
+
+        &:active {
+            background: $gradient-secondary;
+        }
+    }
+}
+
+.input-text {
+    line-height: 10px;
+}

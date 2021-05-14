@@ -1,0 +1,41 @@
+
+/* ======= COLORS ======= */
+
+$dark: #000;
+$white: #fff;
+$primary: #34aca7;
+$light: #eff8f7;
+$light-active: #d9efec;
+$smokie: #e5e5e5;
+$gradient-primary: linear-gradient(180deg, #F4F3F3 0%, #BBB9B9 100%);
+$gradient-secondary: linear-gradient(360deg, #F4F3F3 0%, #BBB9B9 100%);
+
+$color-map: (
+    "wh": $white,
+    "smo": $smokie
+);
+
+/* ======== ICONS ======== */
+
+$icon-map: (
+    "logo": 120,
+    "food": 30,
+    "blog": 30,
+    "list": 30,
+    "camera": 30,
+    "about": 30,
+    "mail": 32,
+    "twitter": (16, 32),
+    "fb": 32,
+    "rss": 32 
+);
+
+/* ======== BORDERS ======== */
+
+$border-map: (
+    "b": border,
+    "bt": border-top,
+    "br": border-right,
+    "bb": border-bottom,
+    "bl": border-left
+);
